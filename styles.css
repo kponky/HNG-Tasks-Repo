@@ -6,10 +6,7 @@
   /* color: #fff; */
 }
 
-body {
-  /* background: #293246; */
 
-}
 
 html {
   scroll-behavior: smooth;
@@ -23,7 +20,7 @@ img {
 
 a {
   text-decoration: none;
-  color: black;
+  /* color: black; */
 }
 
 
@@ -94,6 +91,11 @@ nav .navlists {
   padding-left: 60px;
   font-weight: 700;
   cursor: pointer;
+}
+
+nav .navlists a {
+  color: #007C64;
+
 
 }
 
@@ -144,9 +146,7 @@ nav .navbar-inner .date_time {
 
 }
 
-.hero-section .hero-img {
-  margin-top: 60px;
-}
+
 
 .hero-section .buttons button {
   width: 350px;
@@ -159,17 +159,170 @@ nav .navbar-inner .date_time {
   background: rgb(246, 167, 139);
   border: none;
   border-radius: 12px;
-  color: #007C64;
-  font-size: 18px;
-
-
-
 }
 
-.hero-section .buttons button:hover{
+.hero-section .buttons button a {
+  color: #007C64;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+.hero-section .buttons button:hover {
   background: rgb(241, 148, 114);
 
 }
+
+.hero-section .hero-img {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section .info p,
+.hero-section .info span {
+  font-size: 18px;
+  color: #007C64;
+  padding-top: 10px;
+  font-weight: 500;
+  line-height: 30px;
+
+}
+
+.goals-section {
+
+  margin-top: 30px;
+  padding-inline: 30px;
+  /* background-color: #e2f4f1; */
+
+}
+
+.goals-section h3 {
+  padding-block: 30px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.goals-section h3:after {
+  content: "";
+  /* display: block; */
+  width: 80px;
+  text-align: center;
+  align-items: center;
+  height: 3px;
+  background: rgb(241, 148, 114);
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin: auto
+}
+
+
+
+
+.goals-section .gaols-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: fit-content;
+
+}
+
+.goals-section .gaolscard {
+  width: 30%;
+  margin: 15px;
+  text-align: center;
+  padding: 10px;
+  line-height: 25px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.tobeachieved{
+  padding-inline: 30px;
+  background: rgb(241, 236, 234);
+  margin-block: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #007C64;
+}
+
+.tobeachieved h3,
+.actionplan h3,
+.resources h3{
+  padding-block: 30px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.tobeachieved h3::after,
+.actionplan h3:after,
+.resources h3::after{
+  content: "";
+  /* display: block; */
+  width: 80px;
+  text-align: center;
+  align-items: center;
+  height: 3px;
+  background: rgb(241, 148, 114);
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin: auto
+}
+
+.tobeachieved p, .actionplan p, .resources p{
+  text-align: center;
+  line-height: 25px;
+
+}
+
+.actionplan {
+  padding-inline: 30px;
+
+}
+
+.action-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: fit-content;
+
+
+}
+
+.action-cards .actioncard{
+  width: 20%;
+  margin: 25px;
+  text-align: center;
+  padding: 10px;
+  line-height: 25px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.resources{
+  padding-inline: 30px;
+}
+
+/* resources h3{
+
+} */
+
 
 
 
