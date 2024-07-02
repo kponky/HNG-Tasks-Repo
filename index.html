@@ -1,37 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Tech Goals</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <nav>
     <div class="navbar-inner">
       <div class="logo">
-        <img src="/assests/Basseddy logo.png" alt="">
+        <!-- <img src="/assests/Basseddy logo.png" alt=""> -->
         <h6>BaszEddy.dev</h6>
       </div>
 
-      <ul>
-        <li>Home</li>
-        <li>Goals</li>
-      
+      <ul class="nav-list">
+        <li class="navlists"> <a href="#home">Home</a></li>
+        <li class="navlists"><a href="#myGoals">Goals</a></li>
+
       </ul>
 
-    <div class="date_time">
-   <p>date</p>
-   <p>time</p>
-    </div>
+      <div class="date_time">
+        <span data-testid="currentTimeUTC" id="currentTime">Time:</span>
+        <span data-testid="currentDay" id="currentDay">Date:</span>
+
+      </div>
 
     </div>
 
 
   </nav>
-  
+  <main>
+    <div class="hero-section" id="home">
+      <div class="hero-text">
+        <h1>My Tech Ambitions for the Next 2 Years</h1>
+        <p>As a dedicated and passionate tech enthusiast, I've established a robust roadmap for the next two years,
+          outlining ambitious objectives to significantly expand my technical expertise, broaden my knowledge horizons,
+          and refine my skills in various aspects of software development. I invite you to join me on this thrilling
+          adventure as I share my strategy, progress, and insights, with the ultimate goal of evolving into a versatile,
+          innovative, and forward-thinking developer, equipped to tackle complex challenges and drive cutting-edge
+          solutions.</p>
+
+          <div class="buttons">
+            <button><a href=""> view Code here</a></button>
+          </div>
+      </div>
+      <div class="hero-img">
+        <img src="/assests/img_14-removebg-preview.png" alt="" data-testid="slackProfilePicture">
+      </div>
+
+    </div>
+
+    <div class="goals-section" id="myGoals">
+      thiis is my goals
+
+
+    </div>
+
+    <div class="resources">
+      <h2>Learning Resources</h2>
+      <p>Here are some helpful resources for my learning journey:</p>
+      <ul>
+        <li><a href="https://hng.tech/learn" data-testid="hngLink">hng.tech Learn</a></li>
+        <li><a href="https://keyword.dog" data-testid="keywordLink">Keyword.dog</a></li>
+        <li><a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a></li>
+      </ul>
+    </div>
+  </main>
+
+
 </body>
+
 </html>
