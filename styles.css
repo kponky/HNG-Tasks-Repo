@@ -50,6 +50,13 @@ nav {
   -webkit-box-shadow: 0px 2px 0px 0px rgba(66, 68, 90, 1);
   -moz-box-shadow: 0px 2px 0px 0px rgba(66, 68, 90, 1);
   box-shadow: 0px 1px 0px 0px rgb(200, 204, 209);
+  transition: all 0.3s ease;
+
+}
+
+nav.smaller, .footer.smaller {
+  height: 60px; 
+  font-size: 0.8em; 
 }
 
 nav .navbar-inner {
@@ -110,11 +117,7 @@ nav .navlists a:hover{
 nav .navbar-inner .date_time {
   display: flex;
   flex-direction: column;
-  /* padding-block: 10px; */
-  /* gap: 50px; */
-  /* align-items: center; */
-  /* margin-top: 10px; */
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   cursor: pointer;
   transition: 0.3s;
@@ -124,7 +127,7 @@ nav .navbar-inner .date_time p{
   background-color: #007C64;
   color: #fff;
   text-align: left;
-  padding: 5px;
+  padding: 2px;
   border-radius: 5px;
   margin-top: 2px;
 
@@ -258,11 +261,6 @@ nav .navbar-inner .date_time span {
   margin: auto
 }
 
-
-
-
-
-
 .goals-section .gaols-cards {
   display: flex;
   flex-wrap: wrap;
@@ -295,7 +293,6 @@ box-sizing: border-box; */
   padding-inline: 15px;
 
 }
-
 
 .tobeachieved {
   padding-inline: 30px;
@@ -339,8 +336,6 @@ box-sizing: border-box; */
 .resources p {
   text-align: center;
   line-height: 25px;
-
-
 }
 
 .actionplan {
@@ -390,19 +385,14 @@ box-sizing: border-box; */
   padding-inline: 40px;
   margin-bottom: 50px;
   padding-block: 20px;
-
 }
 
 .resources .resources-list li a {
-
   padding-inline: 40px;
   margin-bottom: 50px;
   color: red;
   font-size: 17px;
-
 }
-
-
 
 
 .footer {
@@ -411,24 +401,21 @@ box-sizing: border-box; */
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 40px;
-  /* line-height: 80px; */
+  height: 50px;
   align-items: center;
   background: rgb(246, 167, 139);
-  /* background-color:; */
-  /* color: orangered; */
-  gap: 40px;
+  gap: 20px;
   color: #007C64;
   font-weight: 700;
-  transition: 0.3s;
   justify-content: center;
   z-index: 9;
   font-family: "Space Grotesk", sans-serif;
-  padding-inline: 40px;
+  padding-inline: 20px;
   border-bottom: 1px solid #000;
   -webkit-box-shadow: 0px 2px 0px 0px rgba(66, 68, 90, 1);
   -moz-box-shadow: 0px 2px 0px 0px rgba(66, 68, 90, 1);
   box-shadow: 0px 1px 0px 0px rgb(200, 204, 209);
+  transition: all 0.3s ease;
 }
 
 .footer a {
@@ -449,20 +436,20 @@ box-sizing: border-box; */
 @media only screen and (max-width: 900px) {
   nav {
     width: 100%;
+    padding-inline: 5px;
   }
 
   nav .nav-list {
     display: none;
   }
 
-
-
-
   .hero-section {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding-top: 40px;
+    padding-inline: 5px;
+
   }
 
   .hero-section .hero-text h1 {
@@ -507,12 +494,12 @@ width: 100%;
 }
 
 .tobeachieved {
-  padding-inline: 20px;
+  padding-inline: 6px;
  
 }
 
 .actionplan {
-  padding-inline: 20px;
+  padding-inline: 6px;
   width: 100%;
 }
 
@@ -535,7 +522,7 @@ width: 100%;
 }
 
 .resources {
-  padding-inline: 20px;
+  padding-inline: 6px;
   font-size: 17px;
 }
 
@@ -560,9 +547,10 @@ width: 100%;
   position: fixed;
   text-align: center;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   height: fit-content;
-
+  font-size: 14px;
+  padding-top: 20px;
 }
 
 }

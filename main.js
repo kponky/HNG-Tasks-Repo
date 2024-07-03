@@ -1,5 +1,17 @@
 const currentTimeDisplay = document.getElementById('currentTime');
 const currentDayDisplay = document.getElementById('currentDay');
+const nav = document.querySelector('nav');
+const footer = document.querySelector('.footer');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 60) { // Adjust the scroll value as needed
+    nav.classList.add('smaller');
+    footer.classList.add('smaller');
+  } else {
+    nav.classList.remove('smaller');
+    footer.classList.remove('smaller');
+  }
+});
 
 function updateTime() {
   const now = new Date(); 
