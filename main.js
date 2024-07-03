@@ -7,7 +7,7 @@ const footer = document.querySelector('.footer');
 
 window.addEventListener('scroll', () => {
 
-  if (window.scrollY > 50) {
+  if (window.scrollY > 60) {
     nav.classList.add('smaller');
     footer.classList.add('smaller');
   } else {
