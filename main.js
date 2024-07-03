@@ -1,4 +1,3 @@
-
 const currentUTCTime = document.querySelector('.time');
 const currentDayElement = document.querySelector('.day');
 
@@ -6,7 +5,6 @@ const nav = document.querySelector('nav');
 const footer = document.querySelector('.footer');
 
 window.addEventListener('scroll', () => {
-
   if (window.scrollY > 60) {
     nav.classList.add('smaller');
     footer.classList.add('smaller');
@@ -20,8 +18,7 @@ function updateTime() {
   const now = new Date(); 
 
   const day = now.getDay();
-  const daysOfWeek = 
-  ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   const currentDay = daysOfWeek[day]; 
 
   let hours = now.getHours(); 
@@ -31,10 +28,11 @@ function updateTime() {
   hours = hours ? hours : 12;
   const formattedTime = `${hours}:${minutes} ${ampm}`;
 
-  currentUTCTime.textContent = formattedTime;
-  currentDayElement.textContent = currentDay;
+  const dateInMS = now.getTime();
+
+  currentUTCTime.innerHTML = ` UTC Time: ${dateInMS}`;
+  currentDayElement.textContent = `Day: ${currentDay}`;
 }
 
 updateTime();
-
-setInterval(updateTime, 60000); 
+setInterval(updateTime, 60000);
