@@ -50,6 +50,13 @@ nav {
   -webkit-box-shadow: 0px 2px 0px 0px rgba(66, 68, 90, 1);
   -moz-box-shadow: 0px 2px 0px 0px rgba(66, 68, 90, 1);
   box-shadow: 0px 1px 0px 0px rgb(200, 204, 209);
+  transition: all 0.3s ease;
+
+}
+
+nav.smaller, .footer.smaller {
+  height: 50px; 
+  font-size: 0.8em; 
 }
 
 nav .navbar-inner {
@@ -110,11 +117,7 @@ nav .navlists a:hover{
 nav .navbar-inner .date_time {
   display: flex;
   flex-direction: column;
-  /* padding-block: 10px; */
-  /* gap: 50px; */
-  /* align-items: center; */
-  /* margin-top: 10px; */
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   cursor: pointer;
   transition: 0.3s;
@@ -124,7 +127,7 @@ nav .navbar-inner .date_time p{
   background-color: #007C64;
   color: #fff;
   text-align: left;
-  padding: 5px;
+  padding: 2px;
   border-radius: 5px;
   margin-top: 2px;
 
@@ -429,6 +432,7 @@ box-sizing: border-box; */
   -webkit-box-shadow: 0px 2px 0px 0px rgba(66, 68, 90, 1);
   -moz-box-shadow: 0px 2px 0px 0px rgba(66, 68, 90, 1);
   box-shadow: 0px 1px 0px 0px rgb(200, 204, 209);
+  transition: all 0.3s ease;
 }
 
 .footer a {
@@ -449,20 +453,20 @@ box-sizing: border-box; */
 @media only screen and (max-width: 900px) {
   nav {
     width: 100%;
+    padding-inline: 5px;
   }
 
   nav .nav-list {
     display: none;
   }
 
-
-
-
   .hero-section {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding-top: 40px;
+    padding-inline: 5px;
+
   }
 
   .hero-section .hero-text h1 {
@@ -507,12 +511,12 @@ width: 100%;
 }
 
 .tobeachieved {
-  padding-inline: 20px;
+  padding-inline: 6px;
  
 }
 
 .actionplan {
-  padding-inline: 20px;
+  padding-inline: 6px;
   width: 100%;
 }
 
@@ -535,7 +539,7 @@ width: 100%;
 }
 
 .resources {
-  padding-inline: 20px;
+  padding-inline: 6px;
   font-size: 17px;
 }
 
