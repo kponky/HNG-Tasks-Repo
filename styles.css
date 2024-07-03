@@ -405,7 +405,7 @@ box-sizing: border-box; */
   height: 50px;
   align-items: center;
   background: rgb(246, 167, 139);
-  gap: 25px;
+  gap: 20px;
   color: #007C64;
   font-weight: 700;
   justify-content: center;
@@ -557,7 +557,7 @@ width: 100%;
   gap: 5px;
   height: fit-content;
   font-size: 14px;
-  padding-top: 25px;
+  padding-top: 34px;
 }
 
 }
