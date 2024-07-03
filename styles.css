@@ -55,7 +55,11 @@ nav {
 }
 
 nav.smaller, .footer.smaller {
+<<<<<<< HEAD
   height: 60px; 
+=======
+  height: 50px; 
+>>>>>>> 9fa665b9c24099b5ee0f33c09cc74365aa0a2ba8
   font-size: 0.8em; 
 }
 
