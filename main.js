@@ -1,19 +1,13 @@
-<<<<<<< HEAD
+
 const currentUTCTime = document.querySelector('.time');
 const currentDayElement = document.querySelector('.day');
-=======
-const currentTimeDisplay = document.getElementById('currentTime');
-const currentDayDisplay = document.getElementById('currentDay');
->>>>>>> 9fa665b9c24099b5ee0f33c09cc74365aa0a2ba8
+
 const nav = document.querySelector('nav');
 const footer = document.querySelector('.footer');
 
 window.addEventListener('scroll', () => {
-<<<<<<< HEAD
-  if (window.scrollY > 60) { // Adjust the scroll value as needed
-=======
-  if (window.scrollY > 50) { // Adjust the scroll value as needed
->>>>>>> 9fa665b9c24099b5ee0f33c09cc74365aa0a2ba8
+
+  if (window.scrollY > 60) {
     nav.classList.add('smaller');
     footer.classList.add('smaller');
   } else {
