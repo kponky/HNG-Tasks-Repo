@@ -405,7 +405,7 @@ box-sizing: border-box; */
   height: 50px;
   align-items: center;
   background: rgb(246, 167, 139);
-  gap: 20px;
+  gap: 25px;
   color: #007C64;
   font-weight: 700;
   justify-content: center;
@@ -420,17 +420,17 @@ box-sizing: border-box; */
 }
 
 .footer a {
-  background-color: #007C64;
-  color: #fff;
-    padding: 5px;
+  /* background-color: #007C64; */
+  color: #02381f;
+  padding: 5px;
 
 }
 
 .footer p:nth-child(3){
   display: flex;
   gap: 10px;
-  background-color: #007C64;
-  color: #fff;
+  /* background-color: #007C64; */
+  color: #02381f;
   align-items: center;
   padding-inline: 10px;
 
