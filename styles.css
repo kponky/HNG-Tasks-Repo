@@ -100,8 +100,11 @@ nav .navlists {
 
 nav .navlists a {
   color: #007C64;
+}
 
-
+nav .navlists a:hover{
+  background-color: #007C64;
+  color: #fff;
 }
 
 nav .navbar-inner .date_time {
@@ -109,15 +112,33 @@ nav .navbar-inner .date_time {
   flex-direction: column;
   /* padding-block: 10px; */
   /* gap: 50px; */
-  align-items: center;
+  /* align-items: center; */
   /* margin-top: 10px; */
   font-size: 18px;
   font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+nav .navbar-inner .date_time p{
+  background-color: #007C64;
+  color: #fff;
+  text-align: left;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 2px;
+
+}
+nav .navbar-inner .date_time p:hover{
+  background: rgb(241, 148, 114);
+  color:  #007C64;
+
 
 }
 
 nav .navbar-inner .date_time span {
   padding-block: 10px;
+
 }
 
 
