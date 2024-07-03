@@ -419,13 +419,19 @@ box-sizing: border-box; */
 }
 
 .footer a {
-  color: rgb(255, 242, 0);
+  background-color: #007C64;
+  color: #fff;
+    padding: 5px;
+
 }
 
 .footer p:nth-child(3){
   display: flex;
-  gap: 30px;
-  color: rgb(255, 242, 0);
+  gap: 10px;
+  background-color: #007C64;
+  color: #fff;
+  align-items: center;
+  padding-inline: 10px;
 
 }
 
@@ -550,7 +556,7 @@ width: 100%;
   gap: 5px;
   height: fit-content;
   font-size: 14px;
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 }

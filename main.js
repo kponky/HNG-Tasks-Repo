@@ -1,5 +1,5 @@
-const currentTimeDisplay = document.getElementById('currentTime');
-const currentDayDisplay = document.getElementById('currentDay');
+const currentUTCTime = document.querySelector('.time');
+const currentDayElement = document.querySelector('.day');
 const nav = document.querySelector('nav');
 const footer = document.querySelector('.footer');
 
@@ -17,7 +17,8 @@ function updateTime() {
   const now = new Date(); 
 
   const day = now.getDay();
-  const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const daysOfWeek = 
+  ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   const currentDay = daysOfWeek[day]; 
 
   let hours = now.getHours(); 
@@ -27,8 +28,8 @@ function updateTime() {
   hours = hours ? hours : 12;
   const formattedTime = `${hours}:${minutes} ${ampm}`;
 
-  currentTimeDisplay.textContent = formattedTime;
-  currentDayDisplay.textContent = currentDay;
+  currentUTCTime.textContent = formattedTime;
+  currentDayElement.textContent = currentDay;
 }
 
 updateTime();
