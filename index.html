@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -27,9 +28,8 @@
       </ul>
 
       <div class="date_time">
-        <span data-testid="currentTimeUTC" id="currentTime">Time:</span>
-        <span data-testid="currentDay" id="currentDay">Date:</span>
-
+        <p data-testid="currentTimeUTC" id="currentTime">Time: <span></span></p>
+        <p data-testid="currentDay" id="currentDay">Date: <span></span> </p>
       </div>
 
     </div>
@@ -48,7 +48,8 @@
           solutions.</p>
 
         <div class="buttons">
-          <button><a href="https://github.com/kponky/HNG-Tasks-Repo.git"> View Code here</a></button>
+          <button>
+            <a href="https://github.com/kponky/HNG-Tasks-Repo.git"> View Code here</a></button>
         </div>
 
         <!-- <div class="info">
@@ -70,12 +71,14 @@
       <div class="gaols-cards">
 
         <div class="gaolscard">
+          <!-- <span><i class="fa-solid fa-code"></i></span> -->
           <h6>Become a fullstack Developer </h6>
           <p>Enhance my proficiency in full-stack development by acquiring expertise in cutting-edge frameworks and
             technologies across both frontend and backend domains, thereby solidifying my position as a versatile and
             accomplished software developer capable of delivering comprehensive solutions.</p>
         </div>
         <div class="gaolscard">
+          <!-- <span><i class="fa-solid fa-lock"></i></span> -->
           <h6>Develop Advanced Security Skills </h6>
           <p>Advance my knowledge in secure software development, network security architecture, and data privacy
             principles to design and develop resilient and secure applications, ensuring the protection of sensitive
@@ -90,22 +93,24 @@
             accomplished software developer capable of delivering comprehensive solutions.</p>
         </div>
         <div class="gaolscard">
-          <h6>Become a fullstack Developer </h6>
-          <p>Enhance my proficiency in full-stack development by acquiring expertise in cutting-edge frameworks and
-            technologies across both frontend and backend domains, thereby solidifying my position as a versatile and
-            accomplished software developer capable of delivering comprehensive solutions.</p>
+          <h6>Become an Advance Ai Tutor</h6>
+          <p>Enhance my proficiency in AI tutoring by acquiring expertise in cutting-edge AI frameworks and
+            technologies, thereby solidifying my position as a versatile and accomplished AI educator capable of
+            delivering comprehensive guidance and support to students navigating the complexities of AI development.</p>
         </div>
         <div class="gaolscard">
-          <h6>Become a fullstack Developer </h6>
-          <p>Enhance my proficiency in full-stack development by acquiring expertise in cutting-edge frameworks and
-            technologies across both frontend and backend domains, thereby solidifying my position as a versatile and
-            accomplished software developer capable of delivering comprehensive solutions.</p>
+          <h6>Master CLoud computing</h6>
+          <p>Develop expertise in cloud computing platforms, encompassing Infrastructure as a Service (IaaS), Platform
+            as a Service (PaaS), and serverless architectures, to design, deploy, and manage scalable, secure, and
+            efficient cloud-based systems and applications
+          </p>
         </div>
         <div class="gaolscard">
-          <h6>Become a fullstack Developer </h6>
-          <p>Enhance my proficiency in full-stack development by acquiring expertise in cutting-edge frameworks and
-            technologies across both frontend and backend domains, thereby solidifying my position as a versatile and
-            accomplished software developer capable of delivering comprehensive solutions.</p>
+          <h6>Deepen Database Expertise</h6>
+          <p>Acquire advanced knowledge and expertise in database architecture, performance optimization, and
+            administration, encompassing both relational and NoSQL databases, to ensure the design, development, and
+            deployment of scalable, efficient, and high-performing database systems.
+          </p>
         </div>
 
       </div>
@@ -133,38 +138,59 @@
       <div class="action-cards">
         <div class="actioncard">
           <h6>Mentorship</h6>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tenetur quaerat alias error ut corrupti!
-            Consequatur, sunt! Dignissimos, possimus itaque.</p>
+          <p>I've established mentorship relationships with seasoned developers and industry experts, leveraging their
+            guidance, feedback, and support to accelerate my growth and development</p>
         </div>
         <div class="actioncard">
-          <h6>Mentorship</h6>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tenetur quaerat alias error ut corrupti!
-            Consequatur, sunt! Dignissimos, possimus itaque.</p>
+          <h6>Advanced Skill Development
+          </h6>
+          <p> In other to succeed my goals, I wil Pursue specialized certifications in my arear of interest and Attend
+            advanced conferences and workshops </p>
         </div>
         <div class="actioncard">
-          <h6>Mentorship</h6>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tenetur quaerat alias error ut corrupti!
-            Consequatur, sunt! Dignissimos, possimus itaque.</p>
+          <h6> Career Advancement</h6>
+          <p> I will Network with industry leaders and explore job opportunities
+            and also develop a personal brand through blogging or podcasting
+          </p>
         </div>
         <div class="actioncard">
-          <h6>Mentorship</h6>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tenetur quaerat alias error ut corrupti!
-            Consequatur, sunt! Dignissimos, possimus itaque.</p>
+          <h6>Project Development</h6>
+          <p> I will start personal projects my desired career path wit passion and also Collaborate with others on
+            projects to build network and skills </p>
         </div>
       </div>
     </div>
 
+
     <div class="resources">
-      <h3>Learning Resources</h3>
-      <p>Here are some helpful resources for my learning journey:</p>
-      <ul>
-        <li><a href="https://hng.tech/learn" data-testid="hngLink">hng.tech Learn</a></li>
-        <li><a href="https://keyword.dog" data-testid="keywordLink">Keyword.dog</a></li>
-        <li><a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a></li>
+
+      <h3>Stay Connected</h3>
+
+      <p>Join me on my journey as I share updates, insights, and learnings through my blog and social media channels.
+        Feel free to reach out for collaborations or questions.</p>
+
+      <ul class="resources-list">
+
+        <li><a href="https://hng.tech/learn" data-testid="hngLink"> Explore HNG's Resources</a></li>
+
+        <li><a href="https://keyword.dog" data-testid="keywordLink">Keyword Research Tool</a></li>
+
+        <li><a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Web Scraping Services</a></li>
+
       </ul>
+
     </div>
 
-    <div class="footer"></div>
+    <div class="footer">
+
+      <p>&copy; 2024 - My Tech Ambitions for the Next 2 Years. All rights reserved.</p>
+
+      <p>Designed and developed by <a href="#home" data-testid="slackDisplayName">IamAbasz</a></p>
+      <p><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:ikponkedet@gmail.com"
+          data-testid="slackEmail">ikponkedet@gmail.com</a></p>
+
+    </div>
+
   </main>
 
 

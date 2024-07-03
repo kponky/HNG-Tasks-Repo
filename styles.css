@@ -23,6 +23,10 @@ a {
   /* color: black; */
 }
 
+ul {
+  list-style: none;
+}
+
 
 
 nav {
@@ -32,7 +36,7 @@ nav {
   left: 0;
   width: 100%;
   height: 80px;
-  line-height: 80px;
+  /* line-height: 80px; */
   align-items: center;
   background: rgb(246, 167, 139);
   /* background-color:; */
@@ -91,6 +95,7 @@ nav .navlists {
   padding-left: 60px;
   font-weight: 700;
   cursor: pointer;
+  display: flex;
 }
 
 nav .navlists a {
@@ -101,13 +106,18 @@ nav .navlists a {
 
 nav .navbar-inner .date_time {
   display: flex;
-  gap: 50px;
+  flex-direction: column;
+  /* padding-block: 10px; */
+  /* gap: 50px; */
   align-items: center;
-  height: 100%;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   font-size: 18px;
   font-weight: 700;
 
+}
+
+nav .navbar-inner .date_time span {
+  padding-block: 10px;
 }
 
 
@@ -230,6 +240,8 @@ nav .navbar-inner .date_time {
 
 
 
+
+
 .goals-section .gaols-cards {
   display: flex;
   flex-wrap: wrap;
@@ -248,7 +260,23 @@ nav .navbar-inner .date_time {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.tobeachieved{
+/* flex: 1 1 33.333%; 
+box-sizing: border-box; */
+
+.gaolscard h6 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #007C64;
+  padding-block: 20px;
+}
+
+.gaolscard p {
+  padding-inline: 15px;
+
+}
+
+
+.tobeachieved {
   padding-inline: 30px;
   background: rgb(241, 236, 234);
   margin-block: 30px;
@@ -259,7 +287,7 @@ nav .navbar-inner .date_time {
 
 .tobeachieved h3,
 .actionplan h3,
-.resources h3{
+.resources h3 {
   padding-block: 30px;
   text-align: center;
   font-weight: 900;
@@ -270,7 +298,7 @@ nav .navbar-inner .date_time {
 
 .tobeachieved h3::after,
 .actionplan h3:after,
-.resources h3::after{
+.resources h3::after {
   content: "";
   /* display: block; */
   width: 80px;
@@ -285,9 +313,12 @@ nav .navbar-inner .date_time {
   margin: auto
 }
 
-.tobeachieved p, .actionplan p, .resources p{
+.tobeachieved p,
+.actionplan p,
+.resources p {
   text-align: center;
   line-height: 25px;
+
 
 }
 
@@ -296,16 +327,26 @@ nav .navbar-inner .date_time {
 
 }
 
-.action-cards{
+.action-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: fit-content;
+}
 
+.actioncard h6 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #007C64;
+  padding-block: 20px;
+}
+
+.actioncard p {
+  padding-inline: 15px;
 
 }
 
-.action-cards .actioncard{
+.action-cards .actioncard {
   width: 20%;
   margin: 25px;
   text-align: center;
@@ -315,24 +356,187 @@ nav .navbar-inner .date_time {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.resources{
+.resources {
   padding-inline: 30px;
+  font-size: 17px;
+
 }
 
-/* resources h3{
+.resources .resources-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-inline: 40px;
+  margin-bottom: 50px;
+  padding-block: 20px;
 
-} */
+}
+
+.resources .resources-list li a {
+
+  padding-inline: 40px;
+  margin-bottom: 50px;
+  color: red;
+  font-size: 17px;
+
+}
+
+
+
+
+.footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  /* line-height: 80px; */
+  align-items: center;
+  background: rgb(246, 167, 139);
+  /* background-color:; */
+  /* color: orangered; */
+  gap: 40px;
+  color: #007C64;
+  font-weight: 700;
+  transition: 0.3s;
+  justify-content: center;
+  z-index: 9;
+  font-family: "Space Grotesk", sans-serif;
+  padding-inline: 40px;
+  border-bottom: 1px solid #000;
+  -webkit-box-shadow: 0px 2px 0px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 2px 0px 0px rgba(66, 68, 90, 1);
+  box-shadow: 0px 1px 0px 0px rgb(200, 204, 209);
+}
+
+.footer a {
+  color: rgb(255, 242, 0);
+}
 
 
 
 
 
 @media only screen and (max-width: 900px) {
-  .hero-section {
-    display: flex;
-    flex-direction: column;
+  nav {
+    width: 100%;
+  }
+
+  nav .nav-list {
+    display: none;
   }
 
 
+
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 40px;
+  }
+
+  .hero-section .hero-text h1 {
+    margin-top: 70px;
+    font-size:40px;
+    /* text-align: center; */
+    color: #007C64;
+    text-align: center;
+}
+
+.hero-section .hero-text {
+  width: 100%;
+}
+
+.hero-section .buttons button {
+  width: 100%;
+
+}
+
+.hero-section .hero-img {
+width: 100%;
+
+}
+
+.goals-section{
+  width: 100%;
+}
+
+.goals-section .gaols-cards {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+ 
+}
+
+.goals-section .gaolscard {
+  width: 100%;
+  margin-bottom: 20px;
+  margin: 0;
+  margin-top: 20px;
+
+}
+
+.tobeachieved {
+  padding-inline: 20px;
+ 
+}
+
+.actionplan {
+  padding-inline: 20px;
+  width: 100%;
+}
+
+.action-cards {
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.action-cards .actioncard {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  line-height: 25px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.resources {
+  padding-inline: 20px;
+  font-size: 17px;
+}
+
+.resources .resources-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* padding-inline: 40px; */
+  margin-bottom:100px;
+  padding-block: 20px;
+}
+
+.resources .resources-list a{
+  padding-top: 20px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  height: fit-content;
+
+
+
+}
 
 }
